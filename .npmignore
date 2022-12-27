@@ -1,2 +1,6 @@
 dist/main.cjs
 src/*
+.eslintrc.js
+pnpm-lock.yaml
+tsconfig.json
+vite.config.ts
