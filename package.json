@@ -2,7 +2,7 @@
   "name": "slosh-js",
   "version": "0.2.3",
   "description": "",
-  "main": "dist/slosh.js",
+  "main": "dist/slosh-js.mjs",
   "types": "dist/main.d.ts",
   "type": "commonjs",
   "scripts": {
