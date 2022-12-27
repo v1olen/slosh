@@ -1,6 +1,6 @@
 {
   "name": "slosh-js",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "",
   "main": "dist/slosh-js.mjs",
   "types": "dist/main.d.ts",
