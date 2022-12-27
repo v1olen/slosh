@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "description": "",
   "main": "dist/slosh.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "tsc && vite build"
+    "build": "vite build && tsc -m amd -t ESNext -d --isolatedModules false --moduleResolution node --esModuleInterop --outFile dist/index.js src/main.ts && rm -rf dist/index.js"
   },
   "repository": {
     "type": "git",
