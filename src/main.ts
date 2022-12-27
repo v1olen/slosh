@@ -1,6 +1,6 @@
 export interface Err<T> {
     value: T,
-};
+}
 
 export type ResultMatchCases<T, U, V> = {
     Ok: (value: T) => V;
@@ -61,7 +61,9 @@ export function Result<T, E>(value: Result<T, E>) {
 export type Option<T> = T | null | undefined;
 export const None = null;
 
-interface ReturnedOption<T> extends ReturnType<typeof _Option<T>> {};
+// This prevent `tsc` from generating recurring type in `mapChain` output
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface ReturnedOption<T> extends ReturnType<typeof _Option<T>> {}
 
 function _Option<T>(value: Option<T>) {
     return {
