@@ -61,7 +61,7 @@ export function Result<T, E>(value: Result<T, E>) {
 export type Option<T> = T | null | undefined;
 export const None = null;
 
-// This prevent `tsc` from generating recurring type in `mapChain` output
+// This prevents `tsc` from generating recurring type in `mapChain` output
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ReturnedOption<T> extends ReturnType<typeof _Option<T>> {}
 
