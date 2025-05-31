@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/slosh-js)
 ![License](https://img.shields.io/github/license/v1olen/slosh)
 
-**slosh-js** is a TypeScript utility library providing constructs for managing optional values (`Option`) and error states (`Result`).
+**slosh-js** is a TypeScript utility library providing constructs for managing optional values (`Option`) and error states (`Result`), inspired by `rust`.
 
 ## Table of Contents
 
